@@ -1,0 +1,25 @@
+{
+    "meta": 
+        {"n_landmarks": 15},
+    "volume": 
+        [
+            {"landmark": 4, "segment": 1},
+            {"landmark": 5, "segment": 2}
+        ],
+    "surface": 
+        [
+            {"landmark": 0, "segment": 1},
+            {"landmark": 1, "segment": 2},
+            {"landmark": 2, "segment": 1},
+            {"landmark": 3, "segment": 2},
+            {"landmark": 6, "segment": [3, 5]},
+            {"landmark": 7, "segment": [4, 5]},
+            {"landmark": 8, "segment": [3, 5]},
+            {"landmark": 9, "segment": [4, 5]},
+            {"landmark": 10, "segment": 3},
+            {"landmark": 11, "segment": 4},
+            {"landmark": 12, "segment": [3, 4]},
+            {"landmark": 13, "segment": 5},
+            {"landmark": 14, "segment": 5}
+        ]
+}

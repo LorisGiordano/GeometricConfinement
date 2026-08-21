@@ -1,0 +1,12 @@
+{
+    "original_dataset": "CTPel",
+    
+    "resampling": true,
+    "target_spacing": [2.0,2.0,2.0],
+    
+    "resizing": false,
+    "target_size": [-1,-1,-1],
+    "mode": ["symmetric", "symmetric", "start"],
+    
+    "analysis": true
+}

@@ -1,0 +1,12 @@
+{
+    "original_dataset": "ImageTBAD",
+    
+    "resampling": true,
+    "target_spacing": [0.5,0.5,0.5],
+    
+    "resizing": false,
+    "target_size": [128,128,128],
+    "mode": ["symmetric", "symmetric", "symmetric"],
+    
+    "analysis": true
+}

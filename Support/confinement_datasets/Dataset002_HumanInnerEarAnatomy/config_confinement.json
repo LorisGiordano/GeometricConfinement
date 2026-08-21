@@ -1,0 +1,11 @@
+{
+    "meta": 
+        {"n_landmarks": 3},
+
+    "surface": 
+        [
+            {"landmark": 0, "segment": 0},
+            {"landmark": 1, "segment": 1},
+            {"landmark": 2, "segment": 0}
+        ]
+}

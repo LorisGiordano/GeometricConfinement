@@ -1,0 +1,87 @@
+{
+    "MRE_micro": 10.10022,
+    "std_micro": 38.48265,
+    "std_macro_class": 8.81904,
+    "MRE_by_class": {
+        "landmark_1": 22.52344,
+        "landmark_3": 2.93424,
+        "landmark_5": 4.84298
+    },
+    "std_by_class": {
+        "landmark_1": 64.83976,
+        "landmark_3": 1.11686,
+        "landmark_5": 1.99351
+    },
+    "detailed_results": {
+        "02781BB458B7EEE0": {
+            "landmark_1": 256.13473,
+            "landmark_3": 1.41421,
+            "landmark_5": 8.60233
+        },
+        "11BC311A21A22818": {
+            "landmark_1": 2.82843,
+            "landmark_3": 2.44949,
+            "landmark_5": 2.44949
+        },
+        "3769021426255867": {
+            "landmark_1": 1.73205,
+            "landmark_3": 1.0,
+            "landmark_5": 5.0
+        },
+        "5202FD9C3F3E6DCB": {
+            "landmark_1": 2.0,
+            "landmark_3": 3.16228,
+            "landmark_5": 6.32456
+        },
+        "56A09B65B422A9C3": {
+            "landmark_1": 6.78233,
+            "landmark_3": 4.12311,
+            "landmark_5": 4.58258
+        },
+        "73781E0BB50F5CFD": {
+            "landmark_1": 2.82843,
+            "landmark_3": 3.31662,
+            "landmark_5": 2.23607
+        },
+        "7645FEEA317A0322": {
+            "landmark_1": 4.0,
+            "landmark_3": 2.23607,
+            "landmark_5": 7.07107
+        },
+        "78BBB9B8FA64AAE9": {
+            "landmark_1": 7.68115,
+            "landmark_3": 5.38516,
+            "landmark_5": 5.09902
+        },
+        "7D8E6E1C05D04B9D": {
+            "landmark_1": 2.23607,
+            "landmark_3": 3.31662,
+            "landmark_5": 7.28011
+        },
+        "84AB58449615F6A7": {
+            "landmark_1": 9.05539,
+            "landmark_3": 3.31662,
+            "landmark_5": 3.0
+        },
+        "AF0F2977AE15FCEB": {
+            "landmark_1": 9.0,
+            "landmark_3": 4.12311,
+            "landmark_5": 3.31662
+        },
+        "B4DE93C52883978B": {
+            "landmark_1": 4.12311,
+            "landmark_3": 2.0,
+            "landmark_5": 2.23607
+        },
+        "D70E1BF285046A89": {
+            "landmark_1": 2.23607,
+            "landmark_3": 2.23607,
+            "landmark_5": 4.12311
+        },
+        "D8807180F5048ADF": {
+            "landmark_1": 4.69042,
+            "landmark_3": 3.0,
+            "landmark_5": 6.48074
+        }
+    }
+}

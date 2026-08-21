@@ -1,0 +1,52 @@
+{
+    "short_description":    "Full radius 7",
+    "dataset_directory":    "ImageTBAD_r05_s128_b",
+    "model_directory":      "LandmarkDetection/SwinUNETR",
+                            
+    "model":               {"model_type": "SwinUNETR",
+                            "image_size": [128, 128, 128],
+                            "image_resolution": [0.5, 0.5, 0.5],
+                            "spatial_dims": 3,
+                            "in_channels": 1,
+                            "out_channels_seg": [1],
+                            "merged": true,
+                            "out_channels_lm": [0,1,2,3],
+                            "inference": "Simple",
+                            
+                            "radius": 7,
+                            "depths": [2, 2, 2, 2],
+                            "num_heads": [3, 6, 12, 24],
+                            "feature_size": 24,
+                            "norm_name": "instance",
+                            "drop_rate": 0.1,
+                            "attn_drop_rate": 0.0},
+                            
+    "training":            {"partition": [70, 15, 15],
+                            "crossvalidation": false,
+                            "batch_size": 2,
+                            "amount_epochs": 500,
+                            "validation_interval": 5,
+                            
+                            "GeoCon": "confinement_config",
+                            "loss_function": ["DiceCELoss", "DiceCELoss"],
+                            "learning_rate": 0.01,
+                            "learning_rate_scheduler": "Polynomial",
+                            "optimizer": "SGD",
+                            "validation_metric": ["DiceMetric", "DiceMetric"]},
+                            
+    "data_augmentations":  {"affine": true,
+                            "elastic": false,
+                            "flip": false,
+                            
+                            "gaussian_noise": true,
+                            "gaussian_blur": true,
+                            "scale_intensity": true,
+                            "shift_intensity": true,
+                            "simulate_low_resolution": false,
+                            "gamma_correction": true},
+                            
+    "post_processing":     {"activation": true, 
+                            "discrete": true, 
+                            "fill_holes": false, 
+                            "largest_component": false}
+}

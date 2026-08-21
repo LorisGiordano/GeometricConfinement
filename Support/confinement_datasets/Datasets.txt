@@ -1,0 +1,11 @@
+REFUGE2
+https://www.kaggle.com/datasets/victorlemosml/refuge2?resource=download
+
+VerSe
+https://github.com/anjany/verse
+
+Human Inner Ear Anatomy
+https://zenodo.org/records/8277159
+
+CTPel
+https://datahub.aida.scilifelab.se/10.23698/aida/ctpel
