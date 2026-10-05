@@ -171,8 +171,18 @@ class Network():
             with open(os.path.join(self.dataset_directory, training["GeoCon"] + '.json'), 'r') as json_file:
                 geocon_config = json.load(json_file)
             self.train_overview.add_training("geometric_confinement", geocon_config)
-                
-        self.loss_function_det = LandmarkDetectionLoss(loss_function[0], geocon_config, self.channels_lm)
+
+        # "region" (SurfConLoss/VolConLoss) or "distance" (DistConLoss)
+        geocon_type = training.get("GeoConType", "region")
+        geocon_params = training.get("GeoConParams", {})
+        if geocon_config:
+            self.train_overview.add_training("geometric_confinement_type", geocon_type)
+            self.train_overview.add_training("geometric_confinement_params", geocon_params)
+
+        self.loss_function_det = LandmarkDetectionLoss(loss_function[0], geocon_config, self.channels_lm,
+                                                       confinement=geocon_type,
+                                                       radius=self.train_overview.get_model("radius"),
+                                                       confinement_params=geocon_params)
  
         if len(loss_function) > 1:
             if loss_function[1] == "DiceCELoss":
